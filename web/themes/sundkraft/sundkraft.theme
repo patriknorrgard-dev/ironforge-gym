@@ -1,0 +1,10 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Main file for the sundkraft theme.
+ */
+
+require_once __DIR__ . '/sundkraft.suggestions.inc';

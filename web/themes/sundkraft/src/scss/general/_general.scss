@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+
+html,
+body {
+  color: $font-color;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  background-color: $white;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  text-decoration: none;
+}

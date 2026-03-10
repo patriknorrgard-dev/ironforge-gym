@@ -1,0 +1,36 @@
+# --- Drupal Core & Dependencies ---
+/vendor/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+
+# --- Drupal Site Specifics ---
+/web/sites/*/files/
+/web/sites/*/settings.local.php
+/web/sites/*/services.local.yml
+/web/sites/*/private/
+
+# --- DDEV ---
+.ddev/.importdb*
+.ddev/.db_snapshots/
+.ddev/db-build/
+.ddev/commands/host/
+.ddev/docker-compose.override.yaml
+.ddev/traefik/
+
+# --- Custom Theme (Vite/Node) ---
+**/node_modules/
+**/.vite/
+**/dist/
+npm-debug.log*
+yarn-error.log*
+
+# --- OS & IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.env
+.env.local

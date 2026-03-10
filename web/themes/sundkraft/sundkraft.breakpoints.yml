@@ -1,0 +1,29 @@
+sundkraft.sm:
+  label: Small (Mobile)
+  mediaQuery: 'all and (min-width: 640px)'
+  weight: 0
+  multipliers: [1x]
+
+sundkraft.md:
+  label: Medium (Tablet)
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 1
+  multipliers: [1x]
+
+sundkraft.lg:
+  label: Large (Desktop)
+  mediaQuery: 'all and (min-width: 1024px)'
+  weight: 2
+  multipliers: [1x]
+
+sundkraft.xl:
+  label: Extra Large
+  mediaQuery: 'all and (min-width: 1280px)'
+  weight: 3
+  multipliers: [1x]
+
+sundkraft.2xl:
+  label: 2X Large
+  mediaQuery: 'all and (min-width: 1536px)'
+  weight: 4
+  multipliers: [1x]

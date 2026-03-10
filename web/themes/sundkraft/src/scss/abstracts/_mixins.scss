@@ -1,0 +1,14 @@
+@use "sass:map";
+@use "breakpoints" as breakpoint;
+
+@mixin breakpoint($size) {
+  @if map.has-key(breakpoint.$breakpoints, $size) {
+    $value: map.get(breakpoint.$breakpoints, $size);
+    
+    @media (min-width: $value) {
+      @content;
+    }
+  } @else {
+    @error "Invalid breakpoint: #{$size}.";
+  }
+}
