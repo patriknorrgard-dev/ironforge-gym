@@ -1,0 +1,10 @@
+uuid: fa802e0b-820f-4f05-9942-807df5ea2b64
+langcode: en
+status: true
+dependencies: {  }
+id: bullet_fact
+label: 'Bullet fact'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

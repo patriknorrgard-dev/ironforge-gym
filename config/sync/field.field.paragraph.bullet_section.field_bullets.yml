@@ -1,0 +1,34 @@
+uuid: d14342af-acb6-4486-9a69-2fa9bb556fcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bullets
+    - paragraphs.paragraphs_type.bullet_fact
+    - paragraphs.paragraphs_type.bullet_section
+  module:
+    - entity_reference_revisions
+id: paragraph.bullet_section.field_bullets
+field_name: field_bullets
+entity_type: paragraph
+bundle: bullet_section
+label: Bullets
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      bullet_fact: bullet_fact
+    negate: 0
+    target_bundles_drag_drop:
+      bullet_fact:
+        weight: 3
+        enabled: true
+      bullet_section:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,29 @@
+uuid: 197309f8-4991-4c5e-985f-e94a2df52a6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bullet_fact.field_description
+    - field.field.paragraph.bullet_fact.field_fact
+    - paragraphs.paragraphs_type.bullet_fact
+id: paragraph.bullet_fact.default
+targetEntityType: paragraph
+bundle: bullet_fact
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_fact:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

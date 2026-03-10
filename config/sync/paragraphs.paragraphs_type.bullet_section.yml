@@ -1,0 +1,10 @@
+uuid: bf103735-2af9-4043-af52-9d08afc88865
+langcode: en
+status: true
+dependencies: {  }
+id: bullet_section
+label: 'Bullet section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

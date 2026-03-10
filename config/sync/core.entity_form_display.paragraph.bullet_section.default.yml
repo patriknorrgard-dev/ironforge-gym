@@ -1,0 +1,86 @@
+uuid: 8561d1c8-849f-4bba-8662-6505d4725ec3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bullet_section.field_body
+    - field.field.paragraph.bullet_section.field_bullets
+    - field.field.paragraph.bullet_section.field_extra_text
+    - field.field.paragraph.bullet_section.field_image
+    - field.field.paragraph.bullet_section.field_link
+    - field.field.paragraph.bullet_section.field_pre_title
+    - field.field.paragraph.bullet_section.field_title
+    - paragraphs.paragraphs_type.bullet_section
+  module:
+    - link
+    - paragraphs
+id: paragraph.bullet_section.default
+targetEntityType: paragraph
+bundle: bullet_section
+mode: default
+content:
+  field_body:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_bullets:
+    type: entity_reference_paragraphs
+    weight: 6
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  field_extra_text:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_pre_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
