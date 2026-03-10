@@ -1,0 +1,19 @@
+uuid: ae9aca5e-954c-499e-b110-3d6cd46dac9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pre_title
+    - paragraphs.paragraphs_type.exercise_section
+id: paragraph.exercise_section.field_pre_title
+field_name: field_pre_title
+entity_type: paragraph
+bundle: exercise_section
+label: 'Pre title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

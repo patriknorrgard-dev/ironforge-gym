@@ -1,0 +1,10 @@
+uuid: 97cb5d6f-0650-45c9-bdf6-21bebbbb373b
+langcode: en
+status: true
+dependencies: {  }
+id: exercise_section
+label: 'Exercise section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

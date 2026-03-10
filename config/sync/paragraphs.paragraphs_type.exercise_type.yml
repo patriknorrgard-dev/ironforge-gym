@@ -1,0 +1,10 @@
+uuid: 23a14582-c001-4c5a-a4b2-fb1e82f057e7
+langcode: en
+status: true
+dependencies: {  }
+id: exercise_type
+label: 'Exercise type'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

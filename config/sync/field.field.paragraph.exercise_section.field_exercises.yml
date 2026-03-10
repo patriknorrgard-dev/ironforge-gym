@@ -1,0 +1,34 @@
+uuid: c35b429e-1b60-477a-aedf-ab01f474e7b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_exercises
+    - paragraphs.paragraphs_type.exercise_section
+    - paragraphs.paragraphs_type.exercise_type
+  module:
+    - entity_reference_revisions
+id: paragraph.exercise_section.field_exercises
+field_name: field_exercises
+entity_type: paragraph
+bundle: exercise_section
+label: Exercises
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      exercise_type: exercise_type
+    negate: 0
+    target_bundles_drag_drop:
+      exercise_section:
+        weight: 2
+        enabled: false
+      exercise_type:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions
