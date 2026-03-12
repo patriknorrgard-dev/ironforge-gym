@@ -5,7 +5,11 @@
     "outDir": "dist/js",
     "rootDir": "src/ts",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "types": ["vite/client"],
   },
-  "include": ["src/ts/**/*"]
+  "include": [
+    "src/ts/**/*", 
+    "components/**/*"
+  ]
 }
