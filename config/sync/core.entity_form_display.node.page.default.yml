@@ -12,6 +12,7 @@ dependencies:
     - node.type.page
   module:
     - link
+    - media_library
     - paragraphs
     - path
 id: node.page.default
@@ -26,14 +27,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_hero_image:
-    type: entity_reference_autocomplete
+    type: media_library_widget
     weight: 7
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
   field_hero_layout:
     type: options_select
