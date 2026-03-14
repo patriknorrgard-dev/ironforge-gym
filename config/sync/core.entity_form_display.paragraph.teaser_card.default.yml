@@ -1,0 +1,52 @@
+uuid: ae1cc747-97ca-43f9-961f-56ea5e7be702
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.teaser_card.field_image
+    - field.field.paragraph.teaser_card.field_link
+    - field.field.paragraph.teaser_card.field_preamble
+    - field.field.paragraph.teaser_card.field_title
+    - paragraphs.paragraphs_type.teaser_card
+  module:
+    - link
+    - media_library
+id: paragraph.teaser_card.default
+targetEntityType: paragraph
+bundle: teaser_card
+mode: default
+content:
+  field_image:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_preamble:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
