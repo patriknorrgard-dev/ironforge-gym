@@ -1,0 +1,13 @@
+$schema: https://git.drupalcode.org
+name: Hero
+description: 'Hero section with title, preamble, image and links'
+props:
+  type: object
+  properties:
+    title: { type: string }
+    preamble: { type: string }
+    image: { type: string }
+    primary_link_url: { type: string }
+    primary_link_title: { type: string }
+    secondary_link_url: { type: string }
+    secondary_link_title: { type: string }

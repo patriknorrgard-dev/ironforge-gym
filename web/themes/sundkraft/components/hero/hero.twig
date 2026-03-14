@@ -1,0 +1,38 @@
+<section {{ attributes.addClass('hero') }}>
+  <div class="hero__background">
+    {{ image }}
+    <div class="hero__overlay"></div>
+  </div>
+
+  <div class="hero__inner">
+    <div class="hero__content">
+      
+      <div class="hero__badge">
+        <span class="hero__badge-line"></span>
+        <span class="hero__badge-text">Öppet dygnet runt · 365 dagar</span>
+      </div>
+
+      {% if title %}
+        <h1 class="hero__title">{{ title|nl2br }}</h1>
+      {% endif %}
+
+      {% if preamble %}
+        <p class="hero__preamble">{{ preamble }}</p>
+      {% endif %}
+
+      <div class="hero__actions button-group">
+        {% if primary_link_url %}
+          <a href="{{ primary_link_url }}" class="button button--primary">
+            {{ primary_link_title }}
+          </a>
+        {% endif %}
+
+        {% if secondary_link_url %}
+          <a href="{{ secondary_link_url }}" class="button button--secondary">
+            {{ secondary_link_title }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
