@@ -1,0 +1,27 @@
+<article class="teaser-card">
+  {% if image %}
+    <div class="teaser-card__image-wrapper">
+      {{ image }}
+    </div>
+  {% endif %}
+
+  <div class="teaser-card__overlay"></div>
+
+  <div class="teaser-card__content">
+    {% if title %}
+      <h2 class="teaser-card__title">{{ title }}</h2>
+    {% endif %}
+
+    {% if preamble %}
+      <div class="teaser-card__preamble">
+        {{ preamble }}
+      </div>
+    {% endif %}
+
+    {% if link_url and link_title %}
+      <a href="{{ link_url }}" class="teaser-card__link-text">
+        {{ link_title }}
+      </a>
+    {% endif %}
+  </div>
+</article>
