@@ -1,0 +1,11 @@
+<nav class="navigation">
+  <ul class="navigation__list">
+    {% for item in items %}
+      <li class="navigation__item">
+        <a href="{{ item.url }}" class="navigation__link">
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
