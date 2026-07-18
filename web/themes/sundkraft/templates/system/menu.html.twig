@@ -11,18 +11,13 @@
  *   - in_active_trail: TRUE if the link is in the active trail.
  */
 #}
-{% if items %}
-  <ul{{ attributes.addClass('menu', 'menu--flat') }}>
-    {% for item in items %}
-      {# Determine BEM classes for each item #}
-      {% set item_classes = ['menu__item'] %}
-      {% if item.in_active_trail %}
-        {% set item_classes = item_classes|merge(['menu__item--active']) %}
-      {% endif %}
+{# templates/menu.html.twig #}
 
-      <li{{ item.attributes.addClass(item_classes) }}>
-        {{ link(item.title, item.url, {'class': ['menu__link']}) }}
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
+{% set component_items = items|map(item => {
+  title: item.title,
+  url: item.url,
+}) %}
+
+{% include 'sundkraft:navigation' with {
+  items: component_items
+} only %}
