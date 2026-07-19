@@ -1,0 +1,18 @@
+<section {{ attributes.addClass('teaser-grid') }}>
+  <div class="teaser-grid__inner">
+    <header class="teaser-grid__header-wrapper">
+      <div class="teaser-grid__header">
+        <span class="teaser-grid__header-line"></span>
+        <span class="teaser-grid__header-label">{{ label }}</span>
+      </div>
+      
+      {% if title %}
+        <h2 class="teaser-grid__title">{{ title }}</h2>
+      {% endif %}
+    </header>
+
+    <div class="teaser-grid__primary-row">
+      {{ cards }}
+    </div>
+  </div>
+</section>

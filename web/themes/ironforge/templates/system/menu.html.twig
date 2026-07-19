@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Flat menu template with BEM-style classes and active link highlighting.
+ *
+ * Available variables:
+ * - items: A flat list of menu items.
+ *   - attributes: HTML attributes for the <li> element.
+ *   - title: The link text.
+ *   - url: The link URL.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ */
+#}
+{# templates/menu.html.twig #}
+
+{% set component_items = items|map(item => {
+  title: item.title,
+  url: item.url,
+}) %}
+
+{% include 'ironforge:navigation' with {
+  items: component_items
+} only %}
