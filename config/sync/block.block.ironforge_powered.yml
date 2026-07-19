@@ -1,0 +1,22 @@
+uuid: 5ba82b96-5c7e-4f33-8649-85ca45159ea7
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ironforge
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: ironforge_powered
+theme: ironforge
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }
