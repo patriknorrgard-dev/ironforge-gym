@@ -1,0 +1,40 @@
+@use "@/scss/abstracts" as *;
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  padding: 1rem 0;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    list-style: none;
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .04em;
+    text-decoration: none;
+  }
+
+  @include breakpoint(md) {
+    &__list {
+      gap: 2rem;
+      padding: 0 2.5rem;
+    }
+  }
+}
