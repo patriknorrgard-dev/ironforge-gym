@@ -1,0 +1,22 @@
+uuid: 7d4d73d9-5a9a-49b0-818e-35f93cce33b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ironforge
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: ironforge_content
+theme: ironforge
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
