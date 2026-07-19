@@ -25,6 +25,7 @@ module:
   image: 0
   link: 0
   media: 0
+  media_library: 0
   menu_link_content: 0
   menu_ui: 0
   mysql: 0
@@ -48,5 +49,5 @@ module:
 theme:
   olivero: 0
   claro: 0
-  sundkraft: 0
+  ironforge: 0
 profile: standard

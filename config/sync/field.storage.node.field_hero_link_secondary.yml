@@ -1,0 +1,19 @@
+uuid: 9e9187c8-0c4a-46da-8feb-321d77f7f703
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_hero_link_secondary
+field_name: field_hero_link_secondary
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

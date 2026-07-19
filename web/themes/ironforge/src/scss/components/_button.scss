@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+
+$btn-padding: 1rem 2rem;
+$btn-letter-spacing: 0.05em;
+
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: $btn-padding;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: $btn-letter-spacing;
+  text-decoration: none;
+  font-family: $font-family;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+
+  @include breakpoint(md) {
+    width: auto;
+  }
+
+  &--primary {
+    background-color: $primary;
+    color: $white;
+    
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+
+  &--secondary {
+    border: 1px solid rgba($white, 0.3);
+    color: $white;
+    background: transparent;
+
+    &:hover {
+      border-color: rgba($white, 0.6);
+      background-color: rgba($white, 0.05);
+    }
+  }
+
+  &--rounded {
+    border-radius: $border-radius;
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+uuid: c20c44e5-cef2-46c8-b33d-d05d91c733ce
+langcode: en
+status: false
+dependencies:
+  theme:
+    - ironforge
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: ironforge_primary_local_tasks
+theme: ironforge
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }
