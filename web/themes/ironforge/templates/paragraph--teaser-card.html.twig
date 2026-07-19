@@ -1,0 +1,7 @@
+{% include 'ironforge:teaser-card' with {
+  image: content.field_image,
+  title: content.field_title,
+  preamble: content.field_preamble,
+  link_url: content.field_link.0['#url'],
+  link_title: content.field_link.0['#title'],
+} only %}

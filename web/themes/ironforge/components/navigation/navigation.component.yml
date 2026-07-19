@@ -1,0 +1,17 @@
+name: Navigation
+description: 'Main navigation with link'
+props:
+  type: object
+  properties:
+    items:
+      type: array
+      title: 'Navigation items'
+      items:
+        type: object
+        properties:
+          title:
+            type: string
+            title: 'Link title'
+          url:
+            type: string
+            title: 'Link URL'
