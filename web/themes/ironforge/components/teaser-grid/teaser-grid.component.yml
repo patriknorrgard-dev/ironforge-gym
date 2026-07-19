@@ -1,0 +1,12 @@
+$schema: https://git.drupalcode.org
+name: Teaser
+description: 'Teaser section with label and title'
+props:
+  type: object
+  properties:
+    label: 
+      type: string
+      title: 'Label'
+    title:
+      type: string
+      title: 'Title'
