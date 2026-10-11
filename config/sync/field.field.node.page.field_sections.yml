@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_sections
     - node.type.page
+    - paragraphs.paragraphs_type.teaser
   module:
     - entity_reference_revisions
 id: node.page.field_sections
@@ -20,6 +21,14 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      teaser: teaser
     negate: 0
+    target_bundles_drag_drop:
+      teaser:
+        weight: 3
+        enabled: true
+      teaser_card:
+        weight: 4
+        enabled: false
 field_type: entity_reference_revisions

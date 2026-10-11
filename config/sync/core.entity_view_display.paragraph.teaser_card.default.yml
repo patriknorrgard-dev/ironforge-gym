@@ -1,0 +1,54 @@
+uuid: 3b0bc189-4d5a-4dde-ab25-8dbf266c722f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.teaser_card.field_image
+    - field.field.paragraph.teaser_card.field_link
+    - field.field.paragraph.teaser_card.field_preamble
+    - field.field.paragraph.teaser_card.field_title
+    - paragraphs.paragraphs_type.teaser_card
+  module:
+    - link
+id: paragraph.teaser_card.default
+targetEntityType: paragraph
+bundle: teaser_card
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_preamble:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }
