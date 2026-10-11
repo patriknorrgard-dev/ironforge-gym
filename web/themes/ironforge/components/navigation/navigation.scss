@@ -6,28 +6,44 @@
   left: 0;
   right: 0;
   z-index: 40;
-  padding: 1rem 0;
 
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  max-width: 2000px;
+  margin: 0 auto;
+  
   &__list {
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 1rem;
+
+    max-width: 80rem;
+    min-height: 6rem;
     margin: 0 auto;
     padding: 0 1.5rem;
+
     list-style: none;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 0;
   }
 
   &__link {
     position: relative;
     display: flex;
     align-items: center;
+
     padding: 0.5rem 0;
 
     color: #fff;
-    font-size: 1rem;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
     font-weight: 500;
-    letter-spacing: .04em;
+    line-height: 1.25rem;
+
     text-decoration: none;
   }
 
