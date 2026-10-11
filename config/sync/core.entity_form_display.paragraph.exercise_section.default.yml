@@ -1,0 +1,45 @@
+uuid: e92d5432-1b94-40c4-8388-3bbc1ec17ff4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.exercise_section.field_exercises
+    - field.field.paragraph.exercise_section.field_pre_title
+    - field.field.paragraph.exercise_section.field_title
+    - paragraphs.paragraphs_type.exercise_section
+  module:
+    - entity_reference_revisions
+id: paragraph.exercise_section.default
+targetEntityType: paragraph
+bundle: exercise_section
+mode: default
+content:
+  field_exercises:
+    type: entity_reference_revisions_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pre_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
