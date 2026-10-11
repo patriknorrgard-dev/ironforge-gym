@@ -1,0 +1,19 @@
+uuid: d62d7990-3a96-42da-8529-451714422abd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pre_title
+    - paragraphs.paragraphs_type.bullet_section
+id: paragraph.bullet_section.field_pre_title
+field_name: field_pre_title
+entity_type: paragraph
+bundle: bullet_section
+label: 'Pre title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: bcda3cca-3f37-46f0-948c-71a9ae789a9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fact
+    - paragraphs.paragraphs_type.bullet_fact
+id: paragraph.bullet_fact.field_fact
+field_name: field_fact
+entity_type: paragraph
+bundle: bullet_fact
+label: Fact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
