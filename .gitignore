@@ -34,3 +34,7 @@ Thumbs.db
 .vscode/
 .env
 .env.local
+
+# --- Databas-exporter ---
+*.sql.gz
+*.sql
