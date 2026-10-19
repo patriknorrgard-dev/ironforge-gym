@@ -15,4 +15,4 @@ component-libraries:
       - components
 
 libraries:
-  - ironforge/vite-dev   # ändra till vite-prod vid produktion
+  - ironforge/vite-prod   # ändra till vite-prod vid produktion
