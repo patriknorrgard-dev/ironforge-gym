@@ -1,0 +1,52 @@
+uuid: 0e31530b-8edb-4e13-86df-6be034a4fcdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pricing_items
+    - paragraphs.paragraphs_type.pricing
+    - paragraphs.paragraphs_type.pricing_card
+  module:
+    - entity_reference_revisions
+id: paragraph.pricing.field_pricing_items
+field_name: field_pricing_items
+entity_type: paragraph
+bundle: pricing
+label: 'Pricing items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      pricing_card: pricing_card
+    negate: 0
+    target_bundles_drag_drop:
+      bullet_fact:
+        weight: 10
+        enabled: false
+      bullet_section:
+        weight: 11
+        enabled: false
+      exercise_section:
+        weight: 12
+        enabled: false
+      exercise_type:
+        weight: 13
+        enabled: false
+      pricing:
+        weight: 14
+        enabled: false
+      pricing_card:
+        weight: 9
+        enabled: true
+      teaser:
+        weight: 15
+        enabled: false
+      teaser_card:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

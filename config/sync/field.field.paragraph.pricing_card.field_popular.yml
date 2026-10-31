@@ -1,0 +1,21 @@
+uuid: 24ee638c-f451-4c35-810d-b0f1ba3d13ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_popular
+    - paragraphs.paragraphs_type.pricing_card
+id: paragraph.pricing_card.field_popular
+field_name: field_popular
+entity_type: paragraph
+bundle: pricing_card
+label: Popular
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

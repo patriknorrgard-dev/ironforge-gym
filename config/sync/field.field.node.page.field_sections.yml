@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_sections
     - node.type.page
+    - paragraphs.paragraphs_type.pricing
     - paragraphs.paragraphs_type.teaser
   module:
     - entity_reference_revisions
@@ -23,8 +24,27 @@ settings:
   handler_settings:
     target_bundles:
       teaser: teaser
+      pricing: pricing
     negate: 0
     target_bundles_drag_drop:
+      bullet_fact:
+        weight: 10
+        enabled: false
+      bullet_section:
+        weight: 11
+        enabled: false
+      exercise_section:
+        weight: 12
+        enabled: false
+      exercise_type:
+        weight: 13
+        enabled: false
+      pricing:
+        weight: 14
+        enabled: true
+      pricing_card:
+        weight: 9
+        enabled: false
       teaser:
         weight: 3
         enabled: true

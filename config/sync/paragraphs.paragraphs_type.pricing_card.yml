@@ -1,0 +1,10 @@
+uuid: 12100f54-6924-4901-b7db-137e8efa2fd9
+langcode: en
+status: true
+dependencies: {  }
+id: pricing_card
+label: 'Pricing card'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

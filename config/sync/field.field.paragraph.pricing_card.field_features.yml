@@ -1,0 +1,19 @@
+uuid: 53cda45b-baed-4daf-beb4-a79ecadd42d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_features
+    - paragraphs.paragraphs_type.pricing_card
+id: paragraph.pricing_card.field_features
+field_name: field_features
+entity_type: paragraph
+bundle: pricing_card
+label: Features
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
