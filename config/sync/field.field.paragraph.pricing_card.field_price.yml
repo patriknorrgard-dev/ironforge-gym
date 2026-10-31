@@ -1,0 +1,19 @@
+uuid: 7b930209-16a4-4602-8112-9392eb7f9d4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_price
+    - paragraphs.paragraphs_type.pricing_card
+id: paragraph.pricing_card.field_price
+field_name: field_price
+entity_type: paragraph
+bundle: pricing_card
+label: Price
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

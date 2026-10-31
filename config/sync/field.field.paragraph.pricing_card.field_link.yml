@@ -1,0 +1,23 @@
+uuid: d1a10fef-96d7-4f2e-9afb-5d40c0fd0ef1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.pricing_card
+  module:
+    - link
+id: paragraph.pricing_card.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: pricing_card
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 1
+field_type: link
