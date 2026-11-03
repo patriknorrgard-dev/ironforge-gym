@@ -1,5 +1,11 @@
 // Borders
 $border-radius: 3px;
+$border-primary: #302f34;
+$border-secondary: #555158;
+
+// Backgrounds
+$bg-primary: #08070a;
+$bg-secondary: #19171d;
 
 // Colors
 $black: #000;
@@ -7,8 +13,13 @@ $white: #fff;
 $charcoal: #475168;
 $pink: #f361fb;
 $purple: #732eb8;
-$secondary: #0f0f0f;
 $primary: $purple;
+$secondary: #0f0f0f;
+$text-primary: #fafafa;
+$text-secondary: #b8b4c0;
+
+// Effects
+$shadow-primary: 0 12px 45px rgba(115, 46, 184, 0.22);
 
 // Fonts
 $font-color: $black;
