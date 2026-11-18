@@ -1,0 +1,23 @@
+uuid: a94e6c18-f740-43e8-944e-54067df41b14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_link
+    - node.type.membership
+  module:
+    - link
+id: node.membership.field_hero_link
+field_name: field_hero_link
+entity_type: node
+bundle: membership
+label: 'Hero link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 1
+field_type: link

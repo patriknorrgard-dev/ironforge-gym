@@ -1,0 +1,19 @@
+uuid: bd8de24e-1dbd-413f-aea9-2060ab58d39f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preamble
+    - node.type.membership
+id: node.membership.field_preamble
+field_name: field_preamble
+entity_type: node
+bundle: membership
+label: 'Hero preamble'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

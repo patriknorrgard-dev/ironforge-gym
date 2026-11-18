@@ -1,0 +1,18 @@
+uuid: 41a80664-eacf-44db-99b2-69f7a57b2aa9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.membership
+id: node.membership.title
+field_name: title
+entity_type: node
+bundle: membership
+label: 'Hero title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
