@@ -6,6 +6,8 @@ dependencies:
     - field.field.paragraph.pricing_card.field_description
     - field.field.paragraph.pricing_card.field_features
     - field.field.paragraph.pricing_card.field_link
+    - field.field.paragraph.pricing_card.field_name
+    - field.field.paragraph.pricing_card.field_popular
     - field.field.paragraph.pricing_card.field_price
     - paragraphs.paragraphs_type.pricing_card
   module:
@@ -17,22 +19,22 @@ mode: default
 content:
   field_description:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
   field_features:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    weight: 4
     region: content
   field_link:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -40,14 +42,33 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 5
     region: content
-  field_price:
+  field_name:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
+    region: content
+  field_popular:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
     weight: 0
+    region: content
+  field_price:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden: {  }

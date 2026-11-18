@@ -1,4 +1,4 @@
-uuid: 27bcfaa6-0ee6-43d5-a020-0ada1df5ff4c
+uuid: 260ceade-3131-4ff9-a25a-f92dbc3b3f16
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,10 @@ dependencies:
 id: paragraph.field_price
 field_name: field_price
 entity_type: paragraph
-type: string
+type: integer
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1
