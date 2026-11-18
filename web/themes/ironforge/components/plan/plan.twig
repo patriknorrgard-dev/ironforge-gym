@@ -1,0 +1,37 @@
+<article {{ attributes.addClass('plan', popular ? 'plan--featured') }}>
+
+  {% if popular %}
+    <span class="plan__tag">Populärast</span>
+  {% endif %}
+
+  {% if name %}
+    <p class="plan__name">{{ name }}</p>
+  {% endif %}
+
+  {% if price %}
+    <p class="plan__price">
+      <span class="plan__amount">{{ price }}</span> kr/mån
+    </p>
+  {% endif %}
+
+  {% if description %}
+    <p class="plan__description">{{ description }}</p>
+  {% endif %}
+
+  {% if features['#items'] %}
+    <ul class="plan__features">
+      {% for item in features['#items'] %}
+        {% if item.value|trim is not empty %}
+          <li class="plan__feature">{{ item.value }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if link_url and link_title %}
+      <a href="{{ link_url }}" class="button button--secondary">
+        {{ link_title }}
+      </a>
+    {% endif %}
+
+</article>

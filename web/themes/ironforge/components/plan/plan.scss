@@ -1,0 +1,98 @@
+@use "@/scss/abstracts" as *;
+
+.plan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 490px;
+
+  padding: 2.5rem 2rem;
+
+  background-color: $bg-secondary;
+  border: 1px solid $border-primary;
+
+  color: $text-primary;
+
+  &--featured {
+    border-color: $purple;
+    box-shadow: $shadow-primary;
+  }
+
+  &__tag {
+    position: absolute;
+    top: -0.8rem;
+    left: 2rem;
+    padding: 0.3rem 0.75rem;
+
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    background-color: $pink;
+    color: $bg-primary;
+  }
+
+  &__name {
+    padding: 0 0 0.5rem;
+  }
+
+  &__price {
+    color: $text-secondary;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    white-space: nowrap;
+  }
+
+  &__amount {
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: $text-primary;
+  }
+
+  &__description {
+    color: $text-secondary;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.75rem;
+  }
+
+  &__features {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+
+    padding: 1.75rem 0 0;
+    margin: 0 0 2rem;
+
+    border-top: 1px solid $border-primary;
+
+    list-style: none;
+    color: $text-primary;
+  }
+
+  &__feature {
+    position: relative;
+    padding-left: 1.5rem;
+
+    color: $text-primary;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.6em;
+
+      width: 0.6rem;
+      height: 2px;
+
+      background-color: $pink;
+    }
+  }
+}

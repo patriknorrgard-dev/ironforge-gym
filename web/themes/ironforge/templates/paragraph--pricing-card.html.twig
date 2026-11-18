@@ -1,0 +1,9 @@
+{% include 'ironforge:plan' with {
+  popular: paragraph.field_popular.value == '1',
+  name: content.field_name,
+  price: content.field_price,
+  description: content.field_description,
+  features: content.field_features,
+  link_url: content.field_link.0['#url'],
+  link_title: content.field_link.0['#title'],
+} only %}

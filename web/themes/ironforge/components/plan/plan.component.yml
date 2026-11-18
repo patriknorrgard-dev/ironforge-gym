@@ -1,0 +1,28 @@
+name: Pricing plan card
+description: 'Pricing plan card with popular, name, price, description, features and link'
+props:
+  type: object
+  properties:
+    popular: 
+      type: boolean
+      title: 'Popular'
+    name: 
+      type: string
+      title: 'Name'
+    price: 
+      type: integer
+      title: 'Price'
+    description: 
+      type: string
+      title: 'Description'
+    features: 
+      type: array
+      title: 'Features'
+      items:
+        type: string
+    link_url: 
+      type: string
+      title: 'Link URL'
+    link_title: 
+      type: string
+      title: 'Link Text'
