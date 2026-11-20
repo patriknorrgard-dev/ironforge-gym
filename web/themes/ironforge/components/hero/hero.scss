@@ -2,7 +2,8 @@
 
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 80vh;
+  min-height: 80svh;
   width: 100%;
   overflow: hidden;
   color: $white;
@@ -26,11 +27,13 @@
   &__overlay {
     position: absolute;
     inset: 0;
+
     background: linear-gradient(
-      to bottom,
-      rgba($secondary, 0.7),
-      rgba($purple, 0.25),
-      rgba($secondary, 0.8)
+      to right,
+      rgba($secondary, 0.48) 0%,
+      rgba($secondary, 0.28) 40%,
+      rgba($secondary, 0.08) 75%,
+      rgba($secondary, 0.02) 100%
     );
   }
 
@@ -38,25 +41,28 @@
     position: relative;
     z-index: 10;
     display: flex;
-    align-items: flex-end;
-    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    min-height: inherit;
     width: 100%;
 
-    max-width: 1280px;
+    max-width: 1640px;
     margin: 0 auto;
 
-    padding: 0 1.25rem 4rem;
+    padding: 8rem 1rem 4rem;
 
     @include breakpoint(md) {
-      padding: 0 2rem 7rem; 
+      padding: 8rem 2rem 7rem; 
     }
 
     @include breakpoint(lg) {
-      padding: 0 2.5rem 8rem;
+      padding: 10rem 2.5rem 8rem;
     }
 
     @include breakpoint(xl) {
-      padding: 0 3rem 8rem;
+      padding: 10rem 3rem 8rem;
     }
   }
 

@@ -1,0 +1,94 @@
+@use "@/scss/abstracts" as *;
+
+.hero {
+  &--campaign {
+
+    .hero__title {
+      font-size: clamp(2.75rem, 11vw, 4rem);
+      margin-bottom: 1rem;
+
+      @include breakpoint(md) {
+        font-size: clamp(3.5rem, 7vw, 5rem);
+      }
+
+      @include breakpoint(lg) {
+        font-size: clamp(3rem, 10vw, 6rem);
+      }
+    }
+
+    .hero__preamble {
+      max-width: 35rem;
+    }
+
+    .hero__actions {
+      margin-top: 2rem;
+    }
+  }
+
+  &__campaign-label {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: $amber;
+
+    opacity: 0;
+    animation: fadeIn 0.6s forwards 0.3s;
+
+    @include breakpoint(md) {
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__campaign-offer {
+    max-width: 38rem;
+    margin: 2rem 0 1.5rem;
+
+    font-size: clamp(2.5rem, 10vw, 3.5rem);
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: $amber;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.8s ease-out forwards 0.8s;
+
+    @include breakpoint(md) {
+      font-size: clamp(3rem, 6vw, 4.5rem);
+      margin: 2.5rem 0 1.75rem;
+    }
+  }
+
+  &__campaign-date {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+
+    margin-bottom: 1.5rem;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgba($white, 0.8);
+
+    span {
+      color: $white;
+      font-weight: 700;
+    }
+
+    opacity: 0;
+    animation: fadeIn 0.6s forwards 1s;
+
+    @include breakpoint(md) {
+      font-size: 0.95rem;
+      gap: 0.75rem;
+    }
+  }
+}

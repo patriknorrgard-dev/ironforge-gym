@@ -40,6 +40,20 @@ $btn-letter-spacing: 0.05em;
     }
   }
 
+  &--campaign {
+    background-color: $amber;
+    color: $secondary;
+    border: 1px solid $amber;
+    border-radius: 15px;
+
+    &:hover {
+      background-color: $dark-amber;
+      border-color: $dark-amber;
+      color: $secondary;
+      transform: translateY(-2px);
+    }
+  }
+
   &--rounded {
     border-radius: $border-radius;
   }
