@@ -1,0 +1,45 @@
+name: Membership-hero
+description: 'Hero section for the membership page, supporting standard and campaign variants'
+props:
+  type: object
+  properties:
+    variant:
+      type: string
+      title: 'variant'
+      enum:
+        - standard
+        - campaign
+      default: standard
+
+    title: 
+      type: string
+      title: 'Title'
+
+    preamble: 
+      type: string
+      title: 'Preamble'
+
+    image:  
+      type: string
+      title: 'Image'
+
+    link_url:
+      type: string
+      title: 'link URL'
+
+    link_title:
+      type: string
+      title: 'link text'
+
+    campaign_offer:
+      type: string
+      title: 'Campaign offer'
+
+    campaign_label:
+      type: string
+      title: 'Campaign label'
+
+    campaign_end_date:
+      type: string
+      format: date
+      title: 'Campaign end date'

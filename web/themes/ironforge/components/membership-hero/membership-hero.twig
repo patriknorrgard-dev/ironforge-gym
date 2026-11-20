@@ -1,0 +1,56 @@
+<section {{ attributes.addClass('hero', variant == 'campaign' ? 'hero--campaign' : 'hero--standard') }}>
+
+  <div class="hero__background">
+    {{ image }}
+    <div class="hero__overlay"></div>
+  </div>
+
+  <div class="hero__inner">
+    <div class="hero__content">
+
+      {% if variant == 'campaign' and campaign_label %}
+        <p class="hero__campaign-label">
+          {{ campaign_label }}
+        </p>
+      {% endif %}
+
+      {% if title %}
+        <h1 class="hero__title">{{ title }}</h1>
+      {% endif %}
+
+      {% if preamble %}
+        <p class="hero__preamble">{{ preamble }}</p>
+      {% endif %}
+
+      {% if variant == 'campaign' %}
+
+        {% if campaign_offer %}
+          <p class="hero__campaign-offer">
+            {{ campaign_offer }}
+          </p>
+        {% endif %}
+
+        {% if campaign_end_date %}
+          <p class="hero__campaign-date">
+            <span>Gäller till {{ campaign_end_date|date('U')|format_date('custom', 'j F Y') }}</span>
+          </p>
+        {% endif %}
+
+      {% endif %}
+
+      <div class="hero__actions button-group">
+        {%  if variant == 'campaign' and link_url %}
+          <a href="{{ link_url }}" class="button button--campaign">
+            {{ link_title }}
+          </a>
+        {% endif %}
+        {%  if variant == 'standard' and link_url %}
+          <a href="{{ link_url }}" class="button button--primary">
+            {{ link_title }}
+          </a>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
