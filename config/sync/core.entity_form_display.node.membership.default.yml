@@ -35,7 +35,7 @@ content:
     settings: {  }
     third_party_settings:
       conditional_fields:
-        fcba275e-5013-461e-b133-2ae297606a93:
+        87ae98bb-85bd-4126-801d-16127f924549:
           entity_type: node
           bundle: membership
           dependee: field_hero_variant
@@ -44,10 +44,12 @@ content:
             reset: false
             condition: value
             grouping: AND
-            values_set: 4
+            values_set: 1
             value: ''
-            values: campaign
-            value_form: {  }
+            values: {  }
+            value_form:
+              -
+                value: campaign
             effect: show
             effect_options: {  }
             selector: ''
@@ -69,10 +71,12 @@ content:
             reset: false
             condition: value
             grouping: AND
-            values_set: 4
+            values_set: 1
             value: ''
             values: campaign
-            value_form: {  }
+            value_form:
+              -
+                value: campaign
             effect: show
             effect_options: {  }
             selector: ''
@@ -94,10 +98,12 @@ content:
             reset: false
             condition: value
             grouping: AND
-            values_set: 4
+            values_set: 1
             value: ''
             values: campaign
-            value_form: {  }
+            value_form:
+              -
+                value: campaign
             effect: show
             effect_options: {  }
             selector: ''
