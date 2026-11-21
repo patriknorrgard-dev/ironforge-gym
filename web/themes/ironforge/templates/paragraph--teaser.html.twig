@@ -1,5 +1,5 @@
 {% include 'ironforge:teaser-grid' with {
-  label: content.field_label,
-  title: content.field_title,
+  label: paragraph.field_label.value,
+  title: paragraph.field_title.value,
   cards: content.field_teaser_items
 } only %}

@@ -1,6 +1,6 @@
 {% include 'ironforge:pricing' with {
-  label: content.field_label,
-  title: content.field_title,
-  intro: content.field_intro,
+  label: paragraph.field_label.value,
+  title: paragraph.field_title.value,
+  intro: paragraph.field_intro.value,
   cards: content.field_pricing_items
 } only %}
