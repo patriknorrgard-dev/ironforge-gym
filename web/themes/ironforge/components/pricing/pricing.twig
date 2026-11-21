@@ -3,16 +3,14 @@
     <header class="pricing__header-wrapper">
       <div class="pricing__header">
         <span class="pricing__header-line"></span>
-        <span class="pricing__header-label">{{ label }}</span>
+        <span class="pricing__header-label">{{ label }}</span>        
       </div>
-      
-      {% if title %}
-        <h2 class="pricing__title">{{ title }}</h2>
-      {% endif %}
 
-      <div class="pricing__cards">
-        {{ cards }}
-      </div>
+      <h2 class="pricing__title">{{ title }}</h2>
     </header>
+
+    <div class="pricing__cards">
+      {{ cards }}
+    </div>
   </div>
 </section>

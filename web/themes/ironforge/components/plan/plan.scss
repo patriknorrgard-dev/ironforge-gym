@@ -7,69 +7,78 @@
 
   width: 100%;
   min-width: 0;
-  min-height: 490px;
+  box-sizing: border-box;
 
-  padding: 2.5rem 2rem;
+  padding: clamp(1.25rem, 2.5vw, 1rem);
 
-  background-color: $bg-secondary;
-  border: 1px solid $border-primary;
+  border: 1px solid #E9E4EB;
+  border-radius: clamp(1rem, 2vw, 1.25rem);
 
   color: $text-primary;
 
   &--featured {
-    border-color: $purple;
-    box-shadow: $shadow-primary;
+    background-color: #FAF3FC;
+    border-color: #7626A8;
   }
 
   &__tag {
     position: absolute;
     top: -0.8rem;
-    left: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+
     padding: 0.3rem 0.75rem;
 
-    font-size: 0.7rem;
+    background-color: #7626A8;
+    border-radius: 15px;
+
+    font-size: clamp(0.6rem, 0.8vw, 0.7rem);
+    font-weight: 600;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    font-weight: 600;
-
-    background-color: $pink;
-    color: $bg-primary;
+    color: $white;
+    white-space: nowrap;
   }
 
   &__name {
+    font-family: $font-inter;
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    font-weight: 900;
+    color: #171719;
     padding: 0 0 0.5rem;
   }
 
   &__price {
-    color: $text-secondary;
-    font-size: 1rem;
+    font-size: clamp(0.875rem, 1.2vw, 1rem);
     margin-bottom: 0.75rem;
     white-space: nowrap;
+    color: #171719;
   }
 
   &__amount {
-    font-size: 3.25rem;
-    font-weight: 800;
-    color: $text-primary;
+    font-family: $font-inter;
+    font-size: clamp(2.25rem, 4vw, 2.8rem);
+    font-weight: 900;
+    color: #171719;
   }
 
   &__description {
-    color: $text-secondary;
-    font-size: 1rem;
+    font-size: clamp(0.875rem, 1.2vw, 1rem);
     line-height: 1.5;
-    margin-bottom: 1.75rem;
+    color: #55515A;
+    margin-bottom: clamp(1.25rem, 2vw, 1.75rem);
   }
 
   &__features {
     flex: 1;
+
     display: flex;
     flex-direction: column;
-    gap: 0.85rem;
+    gap: clamp(0.4rem, 1vw, 0.5rem);
 
-    padding: 1.75rem 0 0;
-    margin: 0 0 2rem;
+    padding: clamp(1.25rem, 2vw, 1.5rem) 0 0;
 
-    border-top: 1px solid $border-primary;
+    border-top: 1px solid #E9E4EB;
 
     list-style: none;
     color: $text-primary;
@@ -79,20 +88,24 @@
     position: relative;
     padding-left: 1.5rem;
 
-    color: $text-primary;
-    font-size: 1rem;
+    color: #55515A;
+    font-size: clamp(0.875rem, 1.2vw, 1rem);
     line-height: 1.5;
 
     &::before {
       content: "";
       position: absolute;
       left: 0;
-      top: 0.6em;
+      top: 0.2em;
 
-      width: 0.6rem;
-      height: 2px;
+      width: 0.45rem;
+      height: 0.75rem;
 
-      background-color: $pink;
+      border-right: 2px solid #55515A;
+      border-bottom: 2px solid #55515A;
+
+      transform: rotate(45deg);
+      margin-top: 0.1rem;
     }
   }
 }

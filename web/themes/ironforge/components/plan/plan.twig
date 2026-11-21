@@ -8,14 +8,14 @@
     <p class="plan__name">{{ name }}</p>
   {% endif %}
 
+  {% if description %}
+    <p class="plan__description">{{ description }}</p>
+  {% endif %}
+
   {% if price %}
     <p class="plan__price">
       <span class="plan__amount">{{ price }}</span> kr/mån
     </p>
-  {% endif %}
-
-  {% if description %}
-    <p class="plan__description">{{ description }}</p>
   {% endif %}
 
   {% if features['#items'] %}
@@ -27,11 +27,5 @@
       {% endfor %}
     </ul>
   {% endif %}
-
-  {% if link_url and link_title %}
-      <a href="{{ link_url }}" class="button button--secondary">
-        {{ link_title }}
-      </a>
-    {% endif %}
 
 </article>
