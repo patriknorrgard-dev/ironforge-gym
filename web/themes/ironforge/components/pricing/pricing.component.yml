@@ -1,6 +1,5 @@
-$schema: https://git.drupalcode.org
 name: Pricing
-description: 'Pricing section with label and title'
+description: 'Pricing section with label, title and intro'
 props:
   type: object
   properties:
@@ -10,3 +9,6 @@ props:
     title:
       type: string
       title: 'Title'
+    intro:
+      type: string
+      title: 'Intro'
