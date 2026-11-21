@@ -2,8 +2,10 @@
   <div class="teaser-grid__inner">
     <header class="teaser-grid__header-wrapper">
       <div class="teaser-grid__header">
+        {% if label %}
         <span class="teaser-grid__header-line"></span>
         <span class="teaser-grid__header-label">{{ label }}</span>
+        {% endif %}
       </div>
       
       {% if title %}

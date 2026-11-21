@@ -2,8 +2,10 @@
   <div class="pricing__inner">
     <header class="pricing__header-wrapper">
       <div class="pricing__header">
+        {% if label %}
         <span class="pricing__header-line"></span>
-        <span class="pricing__header-label">{{ label }}</span>        
+        <span class="pricing__header-label">{{ label }}</span>
+        {% endif %}  
       </div>
 
       <h2 class="pricing__title">{{ title }}</h2>
