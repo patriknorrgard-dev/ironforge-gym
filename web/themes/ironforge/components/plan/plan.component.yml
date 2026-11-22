@@ -15,11 +15,6 @@ props:
     description: 
       type: string
       title: 'Description'
-    features: 
-      type: array
-      title: 'Features'
-      items:
-        type: string
     link_url: 
       type: string
       title: 'Link URL'

@@ -18,14 +18,10 @@
     </p>
   {% endif %}
 
-  {% if features['#items'] %}
-    <ul class="plan__features">
-      {% for item in features['#items'] %}
-        {% if item.value|trim is not empty %}
-          <li class="plan__feature">{{ item.value }}</li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+  {% if link_url and link_title %}
+    <a href="{{ link_url }}" class="button button--primary">
+      {{ link_title }}
+    </a>
   {% endif %}
 
 </article>

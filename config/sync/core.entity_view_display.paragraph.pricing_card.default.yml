@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.pricing_card.field_description
-    - field.field.paragraph.pricing_card.field_features
     - field.field.paragraph.pricing_card.field_link
     - field.field.paragraph.pricing_card.field_name
     - field.field.paragraph.pricing_card.field_popular
@@ -23,14 +22,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 3
-    region: content
-  field_features:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 4
     region: content
   field_link:
     type: link
