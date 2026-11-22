@@ -10,9 +10,11 @@ dependencies:
     - field.field.node.membership.field_hero_link
     - field.field.node.membership.field_hero_variant
     - field.field.node.membership.field_preamble
+    - field.field.node.membership.field_sections
     - node.type.membership
   module:
     - datetime
+    - entity_reference_revisions
     - link
     - options
     - user
@@ -80,6 +82,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_sections:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 106
     region: content
   links:
     settings: {  }

@@ -10,12 +10,14 @@ dependencies:
     - field.field.node.membership.field_hero_link
     - field.field.node.membership.field_hero_variant
     - field.field.node.membership.field_preamble
+    - field.field.node.membership.field_sections
     - node.type.membership
   module:
     - conditional_fields
     - datetime
     - link
     - media_library
+    - paragraphs
     - path
 id: node.membership.default
 targetEntityType: node
@@ -135,6 +137,18 @@ content:
     settings:
       rows: 5
       placeholder: ''
+    third_party_settings: {  }
+  field_sections:
+    type: entity_reference_paragraphs
+    weight: 12
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
   path:
     type: path
