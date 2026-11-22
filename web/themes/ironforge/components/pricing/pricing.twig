@@ -1,19 +1,21 @@
-<section {{ attributes.addClass('pricing') }}>
-  <div class="pricing__inner">
-    <header class="pricing__header-wrapper">
-      <div class="pricing__header">
-        {% if label %}
-        <span class="pricing__header-line"></span>
-        <span class="pricing__header-label">{{ label }}</span>
-        {% endif %}  
+<div class="section">
+  <div class="section--wide">
+    <section {{ attributes.addClass('pricing') }}>
+      <header class="pricing__header-wrapper">
+        <div class="pricing__header">
+          {% if label %}
+          <span class="pricing__header-line"></span>
+          <span class="pricing__header-label">{{ label }}</span>
+          {% endif %}  
+        </div>
+
+        <h2 class="pricing__title">{{ title }}</h2>
+        <p>{{ intro }}</p>
+      </header>
+
+      <div class="pricing__cards">
+        {{ cards }}
       </div>
-
-      <h2 class="pricing__title">{{ title }}</h2>
-      <p>{{ intro }}</p>
-    </header>
-
-    <div class="pricing__cards">
-      {{ cards }}
-    </div>
+    </section>
   </div>
-</section>
+</div>
