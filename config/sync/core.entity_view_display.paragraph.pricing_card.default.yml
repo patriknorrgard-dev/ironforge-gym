@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.pricing_card.field_description
+    - field.field.paragraph.pricing_card.field_icon
     - field.field.paragraph.pricing_card.field_link
     - field.field.paragraph.pricing_card.field_name
     - field.field.paragraph.pricing_card.field_popular
@@ -11,6 +12,7 @@ dependencies:
     - paragraphs.paragraphs_type.pricing_card
   module:
     - link
+    - ui_icons_field
 id: paragraph.pricing_card.default
 targetEntityType: paragraph
 bundle: pricing_card
@@ -22,6 +24,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_icon:
+    type: icon_formatter
+    label: above
+    settings:
+      icon_settings: {  }
+    third_party_settings: {  }
+    weight: 6
     region: content
   field_link:
     type: link
