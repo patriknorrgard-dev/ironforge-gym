@@ -1,0 +1,42 @@
+# MkDocs configuration for the Icons Toolkit documentation.
+# Built and deployed to GitLab Pages by the pages job in .gitlab-ci.yml.
+site_name: Icons Toolkit
+site_url: https://project.pages.drupalcode.org/icons_toolkit
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - search.suggest
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.blocks.caption
+  # Renders ```mermaid code blocks. Material bundles mermaid.js, so no extra
+  # package or extra_javascript is needed.
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          # The python/name tag has no value by design, which ESLint reports
+          # as an empty mapping value.
+          # eslint-disable-next-line yml/no-empty-mapping-value
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Configuration: configuration.md
+  - Usage:
+      - Overview: usage/index.md

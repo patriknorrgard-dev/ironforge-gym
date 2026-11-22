@@ -1,0 +1,20 @@
+{
+  "name": "drupal/icons_toolkit",
+  "description": "Integrates UI Icons & Iconify Icons as a provider to bring a vast library of over 200,000 icons from more than 150 open-source icon packs directly to your Drupal site.",
+  "keywords": ["recipe", "Drupal recipes", "drupal recipe"],
+  "type": "drupal-recipe",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "gxleano",
+      "homepage": "https://www.drupal.org/u/gxleano",
+      "role": "Maintainer"
+    }
+  ],
+  "require": {
+    "drupal/core": "^11.3",
+    "drupal/ui_icons": "^2.1",
+    "drupal/iconify_icons": "^2.0"
+  },
+  "version": "2.0.0"
+}

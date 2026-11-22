@@ -23,6 +23,7 @@ module:
   filter: 0
   help: 0
   history: 0
+  iconify_icons: 0
   image: 0
   link: 0
   media: 0

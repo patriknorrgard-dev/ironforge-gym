@@ -1,0 +1,16 @@
+name: Icons Toolkit
+type: Drupal CMS
+description: Integrates the complete UI Icons ecosystem with Iconify Icons as a provider, bringing a vast library of over 200,000 icons from more than 150 open-source icon packs directly to your Drupal site
+install:
+  - ui_icons
+  - ui_icons_field
+  - ui_icons_ckeditor5
+  - ui_icons_menu
+  - ui_icons_library
+  - ui_icons_picker
+  - ui_icons_text
+  - iconify_icons
+config:
+  import:
+    iconify_icons:
+      - iconify_icons.settings
