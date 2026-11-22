@@ -19,9 +19,11 @@
     {% endif %}
 
     {% if link_url and link_title %}
-      <a href="{{ link_url }}" class="teaser-card__link-text">
+    <div class="button-group">
+      <a href="{{ link_url }}" class="button button--secondary">
         {{ link_title }}
       </a>
+    </div>
     {% endif %}
   </div>
 </article>
