@@ -1,5 +1,5 @@
 name: Pricing plan card
-description: 'Pricing plan card with popular, name, price, description, features and link'
+description: 'Pricing plan card for section Pricing'
 props:
   type: object
   properties:
@@ -21,3 +21,6 @@ props:
     link_title: 
       type: string
       title: 'Link Text'
+slots:
+  icon:
+    title: 'Icon'

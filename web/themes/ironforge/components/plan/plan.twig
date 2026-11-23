@@ -4,6 +4,12 @@
     <span class="plan__tag">Populärast</span>
   {% endif %}
 
+  {% if icon %}
+    <div class="plan__icon">
+      {{ icon }}
+    </div>
+  {% endif %}
+
   {% if name %}
     <p class="plan__name">{{ name }}</p>
   {% endif %}
@@ -19,7 +25,7 @@
   {% endif %}
 
   {% if link_url and link_title %}
-    <a href="{{ link_url }}" class="button button--primary">
+    <a href="{{ link_url }}" class="button button--primary"> 
       {{ link_title }}
     </a>
   {% endif %}
