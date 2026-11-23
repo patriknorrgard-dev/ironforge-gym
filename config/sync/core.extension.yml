@@ -25,6 +25,7 @@ module:
   history: 0
   image: 0
   link: 0
+  lucide: 0
   media: 0
   media_library: 0
   menu_link_content: 0

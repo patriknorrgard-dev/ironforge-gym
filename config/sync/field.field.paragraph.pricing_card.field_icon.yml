@@ -19,6 +19,6 @@ default_value: {  }
 default_value_callback: ''
 settings:
   allowed_icon_pack:
-    lucide_extended: lucide_extended
+    lucide: lucide
   allow_settings: false
 field_type: ui_icon
